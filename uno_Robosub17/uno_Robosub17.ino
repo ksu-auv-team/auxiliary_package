@@ -15,7 +15,25 @@ ros::NodeHandle nh;
 
 //Callback function of subscriber, swith statements to be executed upon receiving messages from master
 void unoMessage(const std_msgs::Int32& msg){
-
+	
+	switch(msg.data)
+	{
+		//Cases for the Dropper. Basically increasing pos3 to rotate the servo when the message is received
+		
+		
+		
+		//Cases for the Robotic arm. Basically have cases to open the hand and close it based on the message
+		
+		
+		
+		//Cases for the LED Strips. Basically have cases for the 2 different sequences to launch the torpedoes
+		
+		
+		
+		//Default case to do nothing if a unexpected integer is published
+		default:
+		break;
+	}
 }
 
 //Instantiate the Subscriber
